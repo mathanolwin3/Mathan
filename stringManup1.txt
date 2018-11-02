@@ -1,0 +1,29 @@
+String obfuscate(String input, Integer charOffset, Map<String, String> wordMap){
+
+	if(wordMap.containsKey(input)){
+		
+		return input;
+		
+	}
+    StringBuilder sb = new StringBuilder();
+    boolean found = false;
+    for(char c : input.toCharArray()){
+        if(Character.isDigit(c)){
+            sb.append(c);
+            found = true;
+        } else if(found){
+            // If we already found a digit before and this char is not a digit, stop looping
+            break;                
+        }
+    }
+	if(input.equals(sb)){
+    	int result = Integer.parseInt(number);			
+        return result*charOffset;
+	}
+	int result = 0;
+	for(int i = 0; i < input.length();i++){
+	    result = result + input.getChar(i);
+	}
+	return result;
+
+}

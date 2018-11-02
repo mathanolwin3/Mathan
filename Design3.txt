@@ -1,0 +1,39 @@
+Let, Given student detailed file be student_file
+Let, local file be record 
+Let, Calender of school be cal
+class admin{
+
+	checkReminder(){
+		//for continuously checking vacation update
+		//if vacation came send notification to student regarding booking	
+		//find buses for student hometown and send that list to student
+	}
+	FriendAlert(){
+		//if the booking is new holds that seat
+		//stored that booking and send that information to other students who goes to same locations
+	}
+	FewDaysBeforeVacation(){
+		//share information of student with other students who are all traveling at same bus
+		//send money collection gateway to student moneyCollection()
+	}
+	DayOfVacation(){
+		//if amount not received send alert to student and cancel seat 
+		//send that ticket cancelation to co traveling students
+	}
+	
+
+}
+class student extends admin{
+
+	receivingReminder(){
+		//get notification regarding vecation from admin
+		//get link for buses
+	}			
+	selectingBus(){
+		//selecting bus from above list and sending it to admin FreindAlert()
+	}
+	moneyCollection(){
+		//pay money for trip
+	}
+
+}
